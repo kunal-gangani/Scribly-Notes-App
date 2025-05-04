@@ -41,4 +41,14 @@ class FirebaseHelper {
       rethrow;
     }
   }
+
+  static Future<void> toggleFavorite(String id, bool isFav) async {
+    try {
+      await _notesRef.doc(id).update({'isFavorite': isFav});
+      log("Note favorite status updated");
+    } catch (e) {
+      log("Error updating favorite status: $e");
+      rethrow;
+    }
+  }
 }

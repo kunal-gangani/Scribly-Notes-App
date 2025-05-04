@@ -32,4 +32,18 @@ class NoteController extends GetxController {
     await FirebaseHelper.deleteNote(id);
     fetchNotes();
   }
+
+  void toggleFavorite(NoteModel note) async {
+  final updatedNote = NoteModel(
+    id: note.id,
+    title: note.title,
+    content: note.content,
+    createdAt: note.createdAt,
+    isFavorite: !note.isFavorite,
+  );
+
+  await FirebaseHelper.toggleFavorite(note.id, updatedNote.isFavorite);
+  fetchNotes(); 
+}
+
 }
