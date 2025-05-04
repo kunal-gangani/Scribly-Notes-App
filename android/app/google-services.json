@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "785934730792",
+    "project_id": "scribly-notes-app",
+    "storage_bucket": "scribly-notes-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:785934730792:android:289bc3e5d6304f9082d71d",
+        "android_client_info": {
+          "package_name": "com.example.notes_application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5wLq8FG2xzQTxShGA2KAIQEXe8N66Ycg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

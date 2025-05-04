@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 import 'package:notes_application/Views/HomePage/home_page.dart';
+import 'package:notes_application/Views/LikedNotesPage/liked_notes_page.dart';
 import 'package:notes_application/Views/SplashScreen/splash_screen.dart';
 
 class Routes {
@@ -15,6 +16,10 @@ class Routes {
     GetPage(
       name: home,
       page: () => HomePage(),
+    ),
+    GetPage(
+      name: liked,
+      page: () => LikedNotesPage(),
     ),
   ];
 }
